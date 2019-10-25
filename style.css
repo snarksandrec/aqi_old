@@ -26,6 +26,7 @@
 .time {
     text-align: center;
     font-weight: bold;
+    background-color: floralwhite;
 }
 
 h1 {
@@ -35,5 +36,4 @@ h1 {
 
 p, body {
     font-family: "Roboto",Verdana,sans-serif;
-
 }
