@@ -31,23 +31,23 @@ function updateHtml(data) {
 
 function getColor(aqi) {
   switch (true) {
-    case (aqi >= 50 && aqi < 100):
-      color = "yellow";
+    case (aqi >= 51 && aqi < 101):
+      color = "#FFF2CC"; //yellow
       break;
-    case (aqi >= 100 && aqi < 150):
-      color = "orange";
+    case (aqi >= 101 && aqi < 151):
+      color = "#F9CB9C"; //orange
       break;
-    case (aqi >= 150 && aqi < 200):
-      color = "red";
+    case (aqi >= 151 && aqi < 201):
+      color = "#EA9999"; //red
       break;
-    case (aqi >= 200 && aqi < 300):
-      color = "purple";
+    case (aqi >= 201 && aqi < 301):
+      color = "#CC0000"; //purple
       break;
-    case (aqi >= 300):
-      color = "brown";
+    case (aqi >= 301):
+      color = "#FF0000"; //maroon
       break;
     default:
-      color = "#B7E1CD";
+      color = "#B7E1CD"; //green 
   }
   return {bg: color, text: (aqi > 200) ? "white" : "black"};
 }
