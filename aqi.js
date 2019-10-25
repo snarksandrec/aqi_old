@@ -47,7 +47,7 @@ function getColor(aqi) {
       color = "brown";
       break;
     default:
-      color = "Lime";
+      color = "#B7E1CD";
   }
   return {bg: color, text: (aqi > 200) ? "white" : "black"};
 }
